@@ -41,6 +41,7 @@ def get_human_move(board):
 
 def get_computer_move(board):
     # Simple rule: pick the first available cell (can be improved)
+
     for i in range(3):
         for j in range(3):
             if board[i][j] == " ":
@@ -51,20 +52,23 @@ def get_computer_move(board):
 def make_move(board, row, col, player):
     board[row][col] = player
 
-def check_winner(board):
-    lines = (
+def get_all_lines(board):
+    """Return all rows, columns, and diagonals as a list of lines."""
+
+    return [
         # Rows
         board[0], board[1], board[2],
-
         # Columns
         [board[0][0], board[1][0], board[2][0]],
         [board[0][1], board[1][1], board[2][1]],
         [board[0][2], board[1][2], board[2][2]],
-        
         # Diagonals
         [board[0][0], board[1][1], board[2][2]],
         [board[0][2], board[1][1], board[2][0]],
-    )
+    ]
+
+def check_winner(board):
+    lines = get_all_lines(board)
 
     for line in lines:
         if line[0] != " " and line[0] == line[1] == line[2]:
@@ -84,6 +88,7 @@ def play_game():
 
         if current == "X":
             row, col = get_human_move(board)
+            
             if row is None:
                 print("You quit the game.")
                 break
