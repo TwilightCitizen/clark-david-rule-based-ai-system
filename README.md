@@ -97,7 +97,7 @@ Tic-Tac-Toe: This is a simple and fun game, but it will be interesting to see ho
 
 ### Prompt(s) Supplied
 
-asdf
+> Please implement the Tic Tac Toe game you just decribed in the file tic_tac_toe.py.  Ideally, use no external libraries or dependencies, relying soley on native Python functionality.  Use functional idioms over object-oriented idioms wherever possible.  If a function exceeds 5 lines of code, consider refactoring it into smaller functions.
 
 ### Remarks on Implementation
 
