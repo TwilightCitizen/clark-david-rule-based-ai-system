@@ -109,8 +109,10 @@ The AI did a good job creating a coherent and performant implementation.  It did
 
 ### How the Rule-Based System Works
 
-asdf
+The rule-based system for Tic-Tac-Toe works by  running a loop indefinitely until certain conditions are met, namely when the human player quits the game or either player wins or draws.  While those conditions are outstanding, the logic retrieves human input, processes valid plays for both players, cautions the human player on invalid input, and updates and displays the game board each turn.  Of particular note, the computer simply takes the first open spot on the Tic-Tac-Toe board for its turn.  This could be modified to choose a random open spot, or to employ a more winning strategy.
+
+All code paths work appropriately, handling good and bad human inputs, processing human and computer wins and draw, and human quitting.  Bad inputs are differentiated between garbage, out-of-bounds, and taken spots.
 
 ### Challenges Encountered
 
-asdf
+No challenges were encountered.
