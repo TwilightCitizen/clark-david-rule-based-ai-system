@@ -103,7 +103,7 @@ Tic-Tac-Toe: This is a simple and fun game, but it will be interesting to see ho
 
 ### Remarks on Implementation
 
-asdf
+The AI did a good job creating a coherent and performant implementation.  It did produce some functions that were much larger than 5 lines, so these functions were doing a lot more work than smaller more focal ones would do, making them harder to reason about at a glance.  Refactoring the AI's work by hand not only reduced the size and scope of the fuctions, but it assured better undertanding of what the AI produced, why it produced what it did, and how it all actually worked.  The resulting code after human refinment is more lines and functions, but they are better named, self-documenting, and far easier to reason about.
 
 ## Part 4: Reflection and Submission
 
