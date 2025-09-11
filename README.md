@@ -103,14 +103,16 @@ Tic-Tac-Toe: This is a simple and fun game, but it will be interesting to see ho
 
 ### Remarks on Implementation
 
-asdf
+The AI did a good job creating a coherent and performant implementation.  It did produce some functions that were much larger than 5 lines, so these functions were doing a lot more work than smaller more focal ones would do, making them harder to reason about at a glance.  Refactoring the AI's work by hand not only reduced the size and scope of the fuctions, but it assured better undertanding of what the AI produced, why it produced what it did, and how it all actually worked.  The resulting code after human refinment is more lines and functions, but they are better named, self-documenting, and far easier to reason about.
 
 ## Part 4: Reflection and Submission
 
 ### How the Rule-Based System Works
 
-asdf
+The rule-based system for Tic-Tac-Toe works by  running a loop indefinitely until certain conditions are met, namely when the human player quits the game or either player wins or draws.  While those conditions are outstanding, the logic retrieves human input, processes valid plays for both players, cautions the human player on invalid input, and updates and displays the game board each turn.  Of particular note, the computer simply takes the first open spot on the Tic-Tac-Toe board for its turn.  This could be modified to choose a random open spot, or to employ a more winning strategy.
+
+All code paths work appropriately, handling good and bad human inputs, processing human and computer wins and draw, and human quitting.  Bad inputs are differentiated between garbage, out-of-bounds, and taken spots.
 
 ### Challenges Encountered
 
-asdf
+No challenges were encountered.
