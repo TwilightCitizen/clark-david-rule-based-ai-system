@@ -34,9 +34,9 @@ Section 01
 
 - Tic-Tac-Toe: The user plays against the computer, with the AI following basic strategies and rules.
 
-### Selected Idea
+### Selected Idea with Justification
 
-asdf
+Tic-Tac-Toe: This is a simple and fun game, but it will be interesting to see how the AI implements it.  Not only must it implement the rules for managing gameplay and determining the winner, but it must also implement a reasonable console user interface (UI) to display the gameboard.  Plus, there will be opportunity to tweak it a bit so that it can employ perfect strategy or just play the computer's turn randomly, making it easier for the human player to win.  Also, while I was thinking of simply card games, this just did not occur to me.
 
 ## Part 2: Designing Your Rule-Based System
 
