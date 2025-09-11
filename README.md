@@ -46,7 +46,52 @@ Tic-Tac-Toe: This is a simple and fun game, but it will be interesting to see ho
 
 ### Rules from GPT Response
 
-asdf
+#### Game Loop Routines
+
+- display_board(board):
+
+    - Prints the current state of the gameboard to the console.
+    
+    - Called at the start of each turn to show the updated board.
+
+- get_human_move(board):
+
+    - Prompts the human player for their move (row and column), checks for valid input, and allows quitting.
+
+    - Called when it’s the human player’s turn.
+
+- get_computer_move(board):
+
+    - Determines the computer’s move using a rule-based or random strategy.
+
+    - Called when it’s the computer’s turn.
+
+- make_move(board, row, col, player):
+
+    - Updates the board with the player’s mark at the specified location.
+
+    - Called after a valid move is chosen.
+
+- check_winner(board):
+
+    - Checks if there is a winner or if the game is a draw.
+
+    - Called after each move to determine if the game should end.
+
+- play_game():
+
+    - The main game loop that alternates turns, calls the above routines, and manages game flow.
+
+    - Runs until a win, draw, or quit.
+
+#### Typical Game Loop
+
+- display_board(board)
+- If human’s turn: get_human_move(board)
+- If computer’s turn: get_computer_move(board)
+- make_move(board, row, col, player)
+- check_winner(board)
+- Repeat until win, draw, or quit
 
 ## Part 3: Coding Your Rule-Based System
 
