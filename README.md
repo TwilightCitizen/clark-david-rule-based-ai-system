@@ -42,7 +42,7 @@ Tic-Tac-Toe: This is a simple and fun game, but it will be interesting to see ho
 
 ### Prompt(s) Supplied
 
-asdf
+> I would like to implement the Tic-Tac-Toe game in Python.  Ideally, I envision a game loop running small functions that update the gameboard after the computer or human player takes a turn, prompt the human player for the row and column they wish to mark on their turn, allow the human player to quit at anytime, and determine when the computer or human player wins.  Can you briefly describe the various routines you would create and the conditions that would drive when each of them are run through each iteration of such a game loop?
 
 ### Rules from GPT Response
 
